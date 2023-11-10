@@ -1,5 +1,4 @@
 # JA3Block-Check
-# TLS Fingerprinting Tool
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/tuononen/ja3er/blob/main/LICENSE)
 
