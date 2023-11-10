@@ -13,7 +13,7 @@ The TLS Fingerprinting Tool is designed for capturing and analyzing TLS handshak
 - Support for offline mode (from pcap files)
 - Flexible output options (stdout or file)
 - JSON format output for easy integration with other tools
-- Customizable blacklist for JA3 fingerprints
+- Customizable blacklist for JA3 fingerprints (https://sslbl.abuse.ch/ja3-fingerprints/)
 - Blocking malicious connections using iptables
 
 ## Installation
