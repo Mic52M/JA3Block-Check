@@ -30,7 +30,7 @@ python ja3er.py -i <interface> -bpf <BPF_filter> --json --savepcap -pf <pcap_fil
 Offline Mode:
 python ja3er.py -f <pcap_file> --json --savepcap -pf <pcap_filename>
 
--i: Specify the network interface for online mode (use "Any" for all interfaces).
+-i: Specify the network interface for online mode (use "Any" for all interfaces). \\
 -f: Provide the path to the pcap file for offline mode.
 --json: Output results in JSON format.
 --savepcap: Save the raw pcap file.
