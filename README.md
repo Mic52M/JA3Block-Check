@@ -1,62 +1,103 @@
-# JA3Block-Check
+# JA3Block-Check ![Python](https://img.shields.io/badge/language-Python-blue?style=flat-square) ![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) ![License](https://img.shields.io/github/license/Mic52M/JA3Block-Check?style=flat-square)
+> **Realtime & offline TLS fingerprint analysis and blacklist blocking 🔒🚦**
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/tuononen/ja3er/blob/main/LICENSE)
+---
 
-## Overview
+## ✨ Overview
 
-The TLS Fingerprinting Tool is designed for capturing and analyzing TLS handshake packets in real-time or from a pcap file. It focuses on extracting and fingerprinting Client Hello and Server Hello messages to identify potential security threats or anomalies in encrypted network traffic.
+**JA3Block-Check** is a powerful Python tool that captures and analyzes TLS packets in real time and from pcap files, focusing on fingerprinting _Client Hello_ and _Server Hello_ messages to detect threats and security anomalies in encrypted traffic.
 
-## Features
+---
 
-- Real-time packet capturing and analysis
-- Support for offline mode (from pcap files)
-- Flexible output options (stdout or file)
-- JSON format output for easy integration with other tools
-- Customizable blacklist for JA3 fingerprints (https://sslbl.abuse.ch/ja3-fingerprints/)
-- Blocking malicious connections using iptables
+## 🚀 Features
+- 🕵️‍♂️ **Real-time packet capture** and live analysis
+- 📦 **Offline support**: analyze pcap files
+- ⚡ **Customizable output**: stdout or file, JSON format for easy integration
+- 🗂️ **Customizable JA3 blacklist** ([sslbl JA3 fingerprints](https://sslbl.abuse.ch/ja3-fingerprints/))
+- ❌ **Block malicious connections** via iptables
+- 🧑‍💻 Compatibility: Python 3.x, Scapy, Colorama
 
-## Installation
+---
 
-1. Clone the repository:
-   git clone https://github.com/tuononen/ja3er.git
+## 🛠 Installation
 
-2. Install required dependencies:
-   pip install -r requirements.txt
-
-## Usage
-Online Mode:
-python ja3er.py -i <interface> -bpf <BPF_filter> --json --savepcap -pf <pcap_filename>
-
-Offline Mode:
-python ja3er.py -f <pcap_file> --json --savepcap -pf <pcap_filename>
-
--i: Specify the network interface for online mode (use "Any" for all interfaces). \\
--f: Provide the path to the pcap file for offline mode.
---json: Output results in JSON format.
---savepcap: Save the raw pcap file.
--pf: Specify the prefix for saved pcap files.
-
-## Optional Arguments:
-
--jtype: Choose "ja3", "ja3s", or "all" (default is "all").
---ja3blacklist: Specify the path to a file containing JA3 blacklist entries.
---IPblacklist: Specify the path to a file containing IP blacklist entries.
-
-## Examples:
-
-1. Capture packets on all interfaces, save as JSON, and save the raw pcap:
-    python ja3er.py -i Any --json --savepcap -pf output
-   
-2. Analyze a pcap file, print results to stdout:
-   python ja3er.py -f input.pcap
+git clone https://github.com/Mic52M/JA3Block-Check.git
+cd JA3Block-Check
+pip install -r requirements.txt
 
 
+---
+
+## ⚡ Usage
+
+### **Online Mode**
+python JA3Script.py -i Any --json --savepcap -pf output
+
+text
+
+- **-i**: network interface ("Any" for all)
+- **--json**: JSON output
+- **--savepcap**: save raw packets
+- **-pf**: output pcap file prefix
+
+### **Offline Mode**
+python JA3Script.py -f input.pcap --json --savepcap -pf output
 
 
+- **-f**: path to the pcap file
+
+### **Advanced Options**
+- `-jtype`: "ja3", "ja3s", "all" _(default: all)_
+- `--ja3blacklist`: path to JA3 blacklist file
+- `--IPblacklist`: path to IP blacklist file
+
+### **Examples**
+Live scan, JSON output, save pcap files
+python JA3Script.py -i Any --json --savepcap -pf results
+
+Analyze a previously captured pcap
+python JA3Script.py -f traffic.pcap
 
 
+---
 
+## 📂 Project Structure
 
+- `JA3Script.py`: main script, CLI parser, core logic
+- `requirements.txt`: dependencies (Scapy, Colorama, etc.)
+- `README.md`: documentation
 
+---
 
+## 🏷️ Tags
+`#TLS #fingerprinting #JA3 #network-security #pcap #python #Infosec #iptables #cybersecurity #real-time #offline`
 
+---
+
+## 🖼️ Badges
+
+- ![Build](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)
+- ![Contributions](https://img.shields.io/badge/contributions-welcome-blue?style=flat-square)
+- ![License](https://img.shields.io/github/license/Mic52M/JA3Block-Check?style=flat-square)
+- ![Last-Commit](https://img.shields.io/github/last-commit/Mic52M/JA3Block-Check?style=flat-square)
+
+---
+
+## 📚 Resources
+
+- [JA3 Fingerprints (sslbl.abuse.ch)](https://sslbl.abuse.ch/ja3-fingerprints/)
+- [Scapy documentation](https://scapy.readthedocs.io/en/latest/)
+- [Colorama docs](https://pypi.org/project/colorama/)
+
+---
+
+## 👨‍💻 Author
+
+**Mic52M**  
+> Cybersecurity Researcher.
+
+---
+
+## ⚖️ License
+
+MIT License - see [LICENSE](LICENSE) for details.
