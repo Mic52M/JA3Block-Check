@@ -4,7 +4,6 @@
 ![Build](https://img.shields.io/badge/build-passing-brightgreen?style=flat-square)
 ![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)
 ![Contributions](https://img.shields.io/badge/contributions-welcome-blue?style=flat-square)
-![License](https://img.shields.io/github/license/Mic52M/JA3Block-Check?style=flat-square)
 ![Last Commit](https://img.shields.io/github/last-commit/Mic52M/JA3Block-Check?style=flat-square)
 
 **Realtime and offline TLS fingerprint analysis with automated blacklist-based connection blocking.**
