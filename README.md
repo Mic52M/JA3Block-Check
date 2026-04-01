@@ -1,4 +1,4 @@
-# JA3Block-Check ![Python](https://img.shields.io/badge/language-Python-blue?style=flat-square) ![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) ![License](https://img.shields.io/github/license/Mic52M/JA3Block-Check?style=flat-square)
+# JA3Block-Check ![Python](https://img.shields.io/badge/language-Python-blue?style=flat-square) ![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) 
 > **Realtime & offline TLS fingerprint analysis and blacklist blocking 🔒🚦**
 
 ---
