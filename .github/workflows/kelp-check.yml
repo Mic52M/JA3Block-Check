@@ -13,3 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: Mic52M/kelp-action@v1
+        with:
+          kelp-url: https://factor-reserves-dispatched-trivia.trycloudflare.com
