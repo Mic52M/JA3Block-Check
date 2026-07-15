@@ -14,4 +14,4 @@ jobs:
     steps:
       - uses: Mic52M/kelp-action@v1
         with:
-          kelp-url: https://factor-reserves-dispatched-trivia.trycloudflare.com
+          kelp-url: https://incurred-routes-soma-union.trycloudflare.com
